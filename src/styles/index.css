@@ -45,3 +45,50 @@ body {
   border-radius: 6px;
   z-index: -1;
 }
+
+.luces{
+  
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  top: 10px;
+}
+.fila-luces {
+  display: flex;
+  justify-content: center;
+  gap: 25px; 
+  color: gray;
+}
+
+
+.luz  {
+  font-size: 60px; 
+  
+}
+.luz.roja{
+color: red;
+}
+.luz.amarilla{
+color: yellow;
+}
+.luz.verde{
+color: green;
+}
+
+.luz.is-on{
+  filter: brightness(1.5);
+  
+}
+.luz.roja.is-on { 
+    color: #ff0000; 
+    text-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000; 
+}
+.luz.amarilla.is-on { 
+    color: #ffff00; 
+    text-shadow: 0 0 20px #ffff00, 0 0 40px #ffff00; 
+}
+.luz.verde.is-on { 
+    color: #00ff00; 
+    text-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00; 
+}
